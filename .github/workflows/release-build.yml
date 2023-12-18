@@ -41,8 +41,7 @@ jobs:
           - mipsel_mips32
           - x86_64
         sdk:
-          - openwrt-21.02
-          - openwrt-22.03
+          - openwrt-23.05
 
     steps:
       - uses: actions/checkout@v3
