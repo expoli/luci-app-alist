@@ -9,7 +9,7 @@ if [ -f /etc/openwrt_release ]; then
 	version=$(echo ${DISTRIB_RELEASE%%.*})
 	platform=$(echo $DISTRIB_ARCH)
 	ldd_version=$(ldd --version 2>&1 | grep Version | awk '{print $2}')
-	[ ${ldd_version%.*} = "1.2" ] && sdk=22.03 || sdk=21.02
+	[ ${ldd_version%.*} = "1.2" ] && sdk=23.05
 else
 	echo -e "${RED_COLOR}Unknown OpenWRT Version${RES}"
 	exit 1
